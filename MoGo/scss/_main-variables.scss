@@ -1,0 +1,55 @@
+p {
+     font: 12px 'Roboto', sans-serif;
+     color: $grey;
+     @media only screen and (min-width: 768px) {
+		font-size: 14px;
+	}
+     .comment { font-style: italic;}
+}
+a {
+    font: 14px 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+h2 {
+    font: bold 14px 'Montserrat', sans-serif;
+    color: #000;
+    text-transform: uppercase;
+	@media only screen and (min-width: 576px) {
+		font-size: 20px;
+    }
+    @media only screen and (min-width: 768px) {
+		font-size: 25px;
+    }
+    @media only screen and (min-width: 992px) {
+		font-size: 30px;
+	} 
+}
+h3 {
+    font: 14px 'Kaushan Script', cursive;
+    color: #000;
+	@media only screen and (min-width: 576px) {
+		font-size: 19px;
+    }
+    @media only screen and (min-width: 769px) {
+		font-size: 24px;
+	}
+}
+h4 {
+    font: bold 11px 'Montserrat', sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    @media only screen and (min-width: 576px) {
+		font-size: 14px;
+	}
+}
+button:focus { outline: none; }
+.wrapper {
+    min-width: 387px;
+    max-width: 1920px;
+    margin: 0 auto;
+}

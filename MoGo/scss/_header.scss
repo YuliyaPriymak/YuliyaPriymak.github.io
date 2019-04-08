@@ -1,0 +1,129 @@
+.header-wrap {
+    background-image: url(../img/header-bg.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    .header {
+        background: -moz-linear-gradient(top, rgba(243,129,129,0.7) 0%, rgba(243,130,129,0.7) 1%, rgba(252,227,138,0.7) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(243,129,129,0.7) 0%,rgba(243,130,129,0.7) 1%,rgba(252,227,138,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(243,129,129,0.7) 0%,rgba(243,130,129,0.7) 1%,rgba(252,227,138,0.7) 100%);
+        width: 100%;
+        .header-top {
+            padding: 30px 0;
+            width: 100%;
+            .logo a {
+                font-size: 30px;
+                font-weight: bold;
+                &:hover { color: $yellow; }
+            }
+            .header-top-content {
+                .search {
+                    position: relative;
+                    &:hover { color: $yellow; }
+                    .search-block {
+                        display: none;
+                    }
+                }
+                .basket {
+                    margin: 0 20px;
+                    @media only screen and (min-width: 450px) { margin: 0 40px; }
+                }
+                .top-nav {
+                    .navbar {
+                        position: relative;
+                        .burger-menu {
+                            width: 30px;
+                            height: 4px;
+                            margin-bottom: 4px;
+                            display: block;
+                            background-color: #fff;
+                            &:last-child { margin-bottom: 0; }
+                        }
+                        .navbar-collapse {
+                            position: absolute;
+                            top: 85%;
+                            @media only screen and (min-width: 992px) { 
+                               position: static; 
+                            }
+                            .navbar-nav a {
+                                text-transform: uppercase;
+                                position: relative;
+                                @media only screen and (min-width: 992px) { 
+                                    &:not(:first-child) {
+                                        margin-left: 50px;
+                                    } 
+                                }
+                                &:hover {
+                                    color: $yellow;
+                                    &:after {
+                                        position: absolute;
+                                        content: "";
+                                        width: 100%;
+                                        background-color: $yellow;
+                                        height: 1px;
+                                        bottom: 0;
+                                        left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .header-bottom {
+            color: #fff;
+			padding-top: 5%;
+            padding-bottom: 8%;
+            .header-content {
+				width: 65%;
+				text-align: center;
+				position: relative;
+                padding-bottom: 2%;
+                .top {
+                    font: 3.7vw 'Kaushan Script', cursive;
+                    color: #fff;
+					@media only screen and (min-width: 1920px) {
+						font-size: 75px;
+                    }
+                }
+                .bottom {
+                    font: bold 8vw 'Montserrat', sans-serif;
+					text-transform: uppercase;
+                    color: #fff;
+					line-height: 1;
+					@media only screen and (min-width: 1920px) {
+						font-size: 135px;
+					}					
+                }
+                &:after {
+					position: absolute;
+					content: "";
+					width: 65px;
+					height: 2px;
+					background-color: #fff;
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+            }
+            .header-button {
+				text-transform: uppercase;
+				font-weight: bold;
+				border: 1px solid #fff;
+				padding: 8px 25px;
+                margin-top: 3%;
+                font-size: 1vw;
+				@media only screen and (min-width: 1920px) {
+					font-size: 14px;
+				}
+				@media only screen and (min-width: 992px) {
+					border: 2px solid #fff;
+					padding: 11px 31px;
+				}
+				&:hover {
+					border-color: $yellow;
+					color: $yellow;				}
+			}
+        }
+    }
+}
